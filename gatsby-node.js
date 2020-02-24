@@ -133,7 +133,7 @@ const injectToPages = (pageContextProperty, menus, {getNodesByType, createPage, 
     });
 };
 
-exports.onPreExtractQueries = ({ createContentDigest, createNodeId, getNodesByType, getNode, reporter, actions }, pluginOptions) => {
+exports.sourceNodes = ({ createContentDigest, createNodeId, getNodesByType, getNode, reporter, actions }, pluginOptions) => {
     
     const { createNode, createPage, deletePage } = actions
     const pluginActions = { createContentDigest, createNodeId, getNodesByType, getNode, createNode, createPage, deletePage }
